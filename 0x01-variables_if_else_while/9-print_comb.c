@@ -1,27 +1,42 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- *  * main - entry point
- *   *
- *    * Description: Print all possible combinations of single-digit numbers
+ *  * main - main block
+ *   * Description: prints all single digit numbers of base 10
+ *    * starting from 0, followed by a new line.
  *     * Return: 0
  */
 int main(void)
 {
-	int i = 0;
+	int c = 0;
 
-	for (i = 0; i < 10; ++i)
+	while (c < 10)
 	{
-		putchar('0' + i);
+		putchar(48 + c);
+		if (c != 9)
+		{																putchar(',');																	putchar(' ');
+			#include <stdio.h>
+#include <stdlib.h>
+/**
+ *  * main - main block
+ *   * Description: prints all single digit numbers of base 10
+ *    * starting from 0, followed by a new line.
+ *     * Return: 0
+ *      */
+int main(void)
+{
+	int c = 0;
 
-		if (i != 9)
-			{
-																		putchar(',');
-																		putchar(' ');
-																		}
+	while (c < 10)
+	{
+		putchar(48 + c);
+		if (c != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		c++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
