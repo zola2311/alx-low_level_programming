@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print -putchar 
- * in a new 
- * line
+ *print -putchar 
+ *in a new 
+ *line
 */
 int main(void)
 {
