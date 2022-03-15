@@ -2,7 +2,7 @@
 /* print -putchar 
  * in a new 
  * line
- */
+*/
 int main(void)
 {
 _putchar('_');
