@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * main - first fibonach numbers
+ * Return:void
+ */
 int main(void)
 {
 double a = 0;
