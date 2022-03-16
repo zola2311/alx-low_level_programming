@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- *main- _islower
- *Description : Another cases, shows
+ *_islower - Another cases, shows
  *Return: 1 for lowercase. 0 for the rest.
  */
 int _islower(int c)
