@@ -1,9 +1,8 @@
-#include "main.h"
+#include "main.c"
 /**
- *main-print_alphabet.
- *Description:print alphabet in lowercase
- *Return: void.
-*/
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
+ */
 void print_alphabet(void)
 {
 char j;
