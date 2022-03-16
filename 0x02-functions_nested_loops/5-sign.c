@@ -2,6 +2,7 @@
 /**
  *print_sign - Prints the sign of a number
  *Description: The number to be checked
+ *@n:integer
  *Return: 1 for posit
  */
 int print_sign(int n)
