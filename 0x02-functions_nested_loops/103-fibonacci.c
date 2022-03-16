@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main - Fibonacci sequence is generation
+ *main - second fibonach numbersn
  *Return : Void
  */
 int main(void)
