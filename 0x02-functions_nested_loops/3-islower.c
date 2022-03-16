@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *main-_islower - Shows 1 if the input is a
+ *main- _islower
  *lowercase character
- *Description :Another cases, shows 
+ *Description : Another cases, shows
  *@c: The character in ASCII code
  *Return: 1 for lowercase. 0 for the rest.
  */
