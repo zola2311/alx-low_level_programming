@@ -1,15 +1,18 @@
-#include <main.c>
-/**
- * main- entry point to program
+#include "main.h"
+/** 
+ * print_alphabet_10
  *
- * return:for stop
 */
-int main(void)
+void print_alphabet_x10(void)
 {
-char a;
-
-for(a = 'a'; a <= 'z' ; a++)
-putchar(a);
-putchar('\n');
-return (0);
+int alpha;
+int alpha2;
+for (alpha = 0; alpha <= 9; alpha++)
+{
+for (alpha2 = 'a'; alpha2 <= 'z'; alpha2++)
+{
+_putchar(alpha2);
+}
+_putchar('\n');
+}
 }
