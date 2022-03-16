@@ -2,6 +2,7 @@
 /**
  *_abs - Computes the absolute value of an integer
  *Description: number being tested
+ *@n:integer n
  *Return: Always 0.
  */
 int _abs(int n)
