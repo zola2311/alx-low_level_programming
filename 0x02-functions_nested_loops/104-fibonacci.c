@@ -1,52 +1,46 @@
-#include "main.h"
+#include <stdio.h>
 /**
- *print_times_table - times table function
- *@n: integer to return
+ * main - Entry point
  *
+ * Return: Always 0 (Success)
  */
-void print_times_table(int n)
+int main(void)
 {
-int i;
-int j;
-
-if (n <= 15 && n >= 0)
+long int n1 = 1;
+long int n2 = 1;
+int i, c;
+long int  sum, sum1, sum2, var11, var12, var21, var22;
+  
+for (i = 0; i < 98; i++)
 {
-for (i = 0; i <= n; i++)
+if (i == 0)
+{ printf("%.0ld, ", n1); }
+else if (i < 91)
 {
-for (j = 0; j <= n; j++)
-{
-int prod = j * i;
-
-if (j == 0)
-{
-_putchar('0');
+sum = n1 + n2;
+n1 = n2;
+n2 = sum;
+printf("%ld, ", sum);
 }
-else if (prod <= 9)
-{
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
-_putchar('0' + prod);
-}
-else if (prod > 99)
-{
-_putchar(',');
-_putchar(' ');
-_putchar('0' + (prod / 100));
-_putchar('0' + ((prod / 10) % 10));
-_putchar('0' + (prod % 10));
-{
 else
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar('0' + (prod / 10));
-_putchar('0' + (prod % 10));
-}
-}
-_putchar('\n');
-}
-}
+if (i == 91)
+{ var11 = n1 / 1000000000;
+var12 = n1 % 1000000000;
+var21 = n2 / 1000000000;
+var22 = n2 % 1000000000; }
+else
+{ var11 = var21;
+var12 = var22;
+var21 = sum1;
+var22 = sum2; }
+sum2 = (var12 + var22) % 1000000000;
+c = (var12 + var22) / 1000000000;
+sum1 = var11 + var21 + c;
+if (!(i == 97))
+printf("%ld%ld, ", sum1, sum2);
+else
+printf("%ld%ld", sum1, sum2); } }
+printf("\n");
+return (0);
 }

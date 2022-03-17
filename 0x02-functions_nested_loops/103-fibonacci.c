@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  *main - second fibonach numbersn
- *Return : Void
+ *Return: zero
  */
 int main(void)
 {
