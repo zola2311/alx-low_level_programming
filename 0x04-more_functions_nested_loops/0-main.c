@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- *main - check spelling
- *Return: zero
- */
-int _isupper(int c);
+*main - check spelling
+*Return: zero
+*/
 int main(void)
 {
 char c;
