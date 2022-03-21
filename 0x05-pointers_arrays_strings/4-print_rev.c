@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_rev - revrse printing 
+ * print_rev - revrse printing
  * @s: the string t
  */
 
-void print_rev(char *s)  
+void print_rev(char *s)
 {
-int longi = 0; 
+int longi = 0;
 int o;
-  
+
 while (*s != '\0')
 {
 longi++;
