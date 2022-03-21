@@ -4,7 +4,7 @@
  * @b:input2
  * @c:swap variable
  */
-swap_int(int *a,int *b)
+void swap_int(int *a,int *b)
 {
 int *c;
 *c = *a;
