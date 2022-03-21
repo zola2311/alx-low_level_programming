@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * print_rev - revrse printing 
  * @s: the string to be printed
