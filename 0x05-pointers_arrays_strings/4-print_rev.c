@@ -3,6 +3,7 @@
  * print_rev - revrse printing 
  * @s: the string to be printed
  */
+void print_rev(char *str1)
 {  
 int i, len, temp;  
 len = strlen(str1);  
