@@ -1,9 +1,7 @@
 #include "stdio.h"
 /**
- *
  * puts2 - function should print only one character of 2
  * @str: input
- *
  * Return: print
  */
 void puts2(char *str)
