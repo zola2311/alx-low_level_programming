@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * swao_int - swap 2 int pointers
  * @a:input1
