@@ -1,10 +1,7 @@
 #include "stdio.h"
-
 /**
  *
- * puts2 - function should print only one character of *
- *starting with the first one
- *
+ * puts2 - function should print only one character of 2
  * @str: input
  *
  * Return: print
