@@ -4,7 +4,7 @@
  * @s:input variable
  * Return: length of str
  */
-_strlen(char *s)
+size_t _strlen(char *s)
 {
 size_t length = 0;
 
