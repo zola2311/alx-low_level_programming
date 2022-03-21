@@ -2,8 +2,14 @@
 /**
  * _strlen - fun that return length str
  * @s:input variable
+ * Return: length of str
  */
 void _strlen(char *s)
 {
-	size_t strlen(const char *s)
+size_t length = 0;
+
+while (*s++)
+	length++;
+
+return (length);
 }
