@@ -2,8 +2,14 @@
 /**
  * _puts - fun that prints string
  * Return:nothing
+ *
+ * @str:to be printed strn
  */
 void _puts(char *str)
+
 {
-	printf("%d\n",*str);
+while (*str)
+_putchar(*str++);
+
+_putchar('\n');
 }
