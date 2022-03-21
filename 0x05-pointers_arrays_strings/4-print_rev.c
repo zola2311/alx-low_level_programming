@@ -31,7 +31,7 @@ void print_rev(char *s)
     
     {
       
-      _putchar(*s);
+      putchar(*s);
       
       s--;
       
@@ -39,6 +39,6 @@ void print_rev(char *s)
   
 
   
-  _putchar('\n');
+  putchar('\n');
   
 }
