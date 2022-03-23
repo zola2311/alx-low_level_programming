@@ -1,49 +1,36 @@
 #include "main.h"
-#include <stdio.h>
-/**
- * print_number - Print an integer using only _putchar
- * @n: integer to print
- */
 
+/**
+ *print_number - function that prints an integer.
+ *@n: fghji
+ *Return: 0
+ *
+ */
 void print_number(int n)
 {
-  int power;
-  int neg;
-  int hold;
+  unsigned int dc, dig, nat = n;
+  double f = 1;
 
-  neg = 0;
-  power = 1;
-  hold = n;
-  if (n < 0)
+  if (n == 0)
+    _putchar('0');
+  else
     {
-      _putchar('-');
-      neg = 1;
-    }
-
-  while (hold > 9 || hold < -9)
-    {
-      power *= 10;
-      hold /= 10;
-    }
-
-  while (power > 0)
-    {
-      if (power > 9)
+      if (n < 0)
 	{
-	  if (!neg)
-	    _putchar((n / power % 10) + '0');
-	  else
-	    _putchar((n / power % 10) * -1 + '0');
-
-	  power /= 10;
+	  nat = n * -1;
+	  _putchar('-');
 	}
-      if (power == 1)
+
+      while (f <= nat)
+	f *= 10;
+      dc = f / 10;
+
+      while (dc >= 1)
 	{
-	  if (neg)
-	    _putchar((n % 10) * -1 + '0');
-	  else
-	    _putchar(n % 10 + '0');
-	  power = 0;
+	  dig = nat / dc;
+	  _putchar(dig + '0');
+	  nat = (nat - (dc * dig));
+	  dc /= 10;
 	}
     }
 }
