@@ -1,55 +1,45 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * _realloc - Reallocates a memory block using malloc and free.
- * @ptr: A pointer to the memory previously allocated.
- * @old_size: The size in bytes of the allocated space for ptr.
- * @new_size: The size in bytes for the new memory block.
+ * *argstostr - concatenates all the arguments of the program
+ * @ac: number of arguments
+ * @av: array of arguments
  *
- * Return: If new_size == old_size - ptr.
- *         If new_size == 0 and ptr is not NULL - NULL.
- *         Otherwise - a pointer to the reallocated memory block.
+ * Return: Pointer to the new string (Success), NULL (Error)
  */
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+char *argstostr(int ac, char **av)
 {
-void *mem;
-char *ptr_copy, *filler;
-unsigned int index;
+int i, j, k, len;
+char *str;
 
-if (new_size == old_size)
-return (ptr);
-
-if (ptr == NULL)
-{
-mem = malloc(new_size);
-
-if (mem == NULL)
+if (ac == 0 || av == NULL)
 return (NULL);
 
-return (mem);
-}
-
-if (new_size == 0 && ptr != NULL)
+for (i = 0; i < ac; i++)
 {
-free(ptr);
-return (NULL);
+for (j = 0; av[i][j] != '\0'; j++)
+len++;
+len++;
 }
 
-ptr_copy = ptr;
-mem = malloc(sizeof(*ptr_copy) * new_size);
+str = malloc(sizeof(char) * (len + 1));
 
-if (mem == NULL)
+if (str == NULL)
+return (NULL);
+
+k = 0;
+
+for (i = 0; i < ac; i++)
 {
-free(ptr);
-return (NULL);
+for (j = 0; av[i][j] != '\0'; j++)
+{
+str[k] = av[i][j];
+k++;
+}
+str[k] = '\n';
+k++;
 }
 
-filler = mem;
-
-for (index = 0; index < old_size && index < new_size; index++)
-filler[index] = *ptr_copy++;
-
-free(ptr);
-return (mem);
+return (str);
 }
